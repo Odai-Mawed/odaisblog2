@@ -1,0 +1,26 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  sure_name: String
+  last_name: String
+  birthday: AWSDate
+  email: AWSEmail
+  posts: [Post] @manyToMany(relationName: "UserPost")
+}
+
+type Comment @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  content: String
+  Users: User @hasOne
+  postsID: ID @index(name: "byPost")
+}
+
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  kicker: String
+  content: String
+  content_images: [String]
+  untitledfield: String
+  Users: [User] @manyToMany(relationName: "UserPost")
+  Comments: [Comment] @hasMany(indexName: "byPost", fields: ["id"])
+}

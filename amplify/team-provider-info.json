@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-odaisblog2-staging-91638-authRole",
+      "UnauthRoleArn": "arn:aws:iam::896501566680:role/amplify-odaisblog2-staging-91638-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::896501566680:role/amplify-odaisblog2-staging-91638-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-odaisblog2-staging-91638-deployment",
+      "UnauthRoleName": "amplify-odaisblog2-staging-91638-unauthRole",
+      "StackName": "amplify-odaisblog2-staging-91638",
+      "StackId": "arn:aws:cloudformation:eu-central-1:896501566680:stack/amplify-odaisblog2-staging-91638/0469d160-71f6-11ec-ae2a-0a0f12e4f94e",
+      "AmplifyAppId": "d1f9p2ruv9wxfk"
+    },
+    "categories": {
+      "auth": {
+        "odaisblog206340dce": {}
+      }
+    }
+  }
+}
